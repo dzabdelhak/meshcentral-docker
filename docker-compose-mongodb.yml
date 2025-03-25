@@ -15,8 +15,8 @@ services:
             - 'mongodb'
         image: typhonragewind/meshcentral:mongodb-latest
         ports:
-            - 8086:443
-            - 8087:800
+            - 8087:443
+            - 8089:800
         environment:
             - HOSTNAME=my.domain.com     #your hostname
             - REVERSE_PROXY=false     #set to your reverse proxy IP if you want to put meshcentral behind a reverse proxy
